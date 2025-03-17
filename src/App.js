@@ -12,7 +12,7 @@ import files from "./files";
 
 function PhotoListItem({ file }) {
   return (
-    <li key={file.source} className="relative  ">
+    <li className="relative  ">
       <div className="group aspect-square block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ">
         <Image
           src={file.source}
@@ -42,7 +42,7 @@ function PhotoList() {
       className="grid grid-cols-2 gap-24 sm:grid-cols-3 lg:grid-cols-4  "
     >
       {files.map((file) => (
-        <PhotoListItem file={file} />
+        <PhotoListItem file={file} key={file.source} />
       ))}
     </ul>
   );
