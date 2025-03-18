@@ -13,11 +13,11 @@ import files from "./files";
 function PhotoListItem({ file }) {
   return (
     <li className="relative  ">
-      <div className="group aspect-square block w-full overflow-hidden rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ">
+      <div className="group aspect-square block w-full  rounded-lg bg-gray-100 focus-within:ring-2 focus-within:ring-indigo-500 focus-within:ring-offset-2 focus-within:ring-offset-gray-100 ">
         <Image
           src={file.source}
           alt={file.title}
-          className="pointer-events-none object-cover group-hover:opacity-75 group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black transition-all duration-300 ease-in-out transform"
+          className="pointer-events-none object-cover group-hover:opacity-75 group-hover:scale-110 group-hover:shadow-xl group-hover:shadow-black transition-all duration-300 ease-in-out "
           width={500}
           height={500}
         />
